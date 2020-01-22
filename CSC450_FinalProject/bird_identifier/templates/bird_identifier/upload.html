@@ -1,0 +1,29 @@
+{% extends "bird_identifier/base.html" %}
+
+{% block content %}
+
+	<form method="POST" enctype="multipart/form-data">
+		<input id="file" name="file" type="file" />
+		<input type="submit" value="submit" id="submit" />
+		<dl>
+			<dt><blockquote><strong>Note:</strong> This application can identify the following species:
+			</blockquote></dt>
+		<dd>	
+		<ul>
+			<li><b>Laughing Gull</b></li>
+			<li><b>Ring Billed Gull</b></li>
+			<li><b>Canadian Goose</b></li>
+			<li><b>Brown Pelican</b></li>
+			<li><b>Great Blue Heron</b></li>			
+			<li><b>Great Egret</b></li>
+			<li><b>Snowy Egret</b></li>
+			<li><b>Osprey</b></li>
+			<li><b>Killdeer</b></li>
+			<li><b>Greater Yellowlegs</b></li>
+		</ul>
+		</dd>
+		</dl>
+        {% csrf_token %}
+	</form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "bird_identifier/base.html" %}
+
+{% block content %}
+
+<div class="text-center">
+
+  <h2>{{ bird.common_name }}</h2>
+
+  <img src="{{ bird.image.url }}" class="rounded border border-primary"/>
+</div>
+
+<br />
+
+<div class="border border-primary">
+  <p><b>Scientific Name:</b> {{ bird.scientific_name }}</p>
+  <p><b>Wingspan</b> {{ bird.wingspan }}</p>
+  <p><b>Mass</b> {{ bird.mass }}</p>
+  <p><b>Lifespan</b> {{ bird.lifespan }}</p>
+  <p><b>Conservation Status:</b> {{ bird.conservation_status }}</p>
+  <p><b>Fact:</b> {{ bird.fact }}</p>
+</div>
+
+
+{% endblock %}
