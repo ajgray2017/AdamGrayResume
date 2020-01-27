@@ -1,7 +1,7 @@
-(function(window, document, drawingModule, undefined) {
+(function(window, document, drawModule, undefined) {
 
-    var btn = document.getElementById('sbtn');
-    btn.addEventListener("click", function() { drawingModule.init(); });
+    var btn = document.getElementById('btn');
+    btn.addEventListener("click", function() { drawModule.init(); });
 
     document.onkeydown = function(event) {
 
@@ -41,4 +41,4 @@
     }
 
 
-})(window, document, drawingModule);
+})(window, document, drawModule);
