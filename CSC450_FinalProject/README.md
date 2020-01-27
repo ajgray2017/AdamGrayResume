@@ -1,5 +1,7 @@
 # visualbirds
-CSC 450 Project
+CSC 450 Project - Fall 2019
+Team Members - 
+Adam Gray, Dat Tran, Dylan Mennen, Ryan Bouffard, Tyler Killgore, Tyler Kramlich
 
 ## Cloning Instructions
 
