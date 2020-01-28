@@ -1,34 +1,31 @@
-var drawModule = (function() {
+var drawModule = (function () {
 
-    var bodySnake = function(x, y) {
-        context.fillStyle = 'green';
+    var bodySnake = function (x, y) {
+        context.fillStyle = 'white';
         context.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
-        context.strokeStyle = 'darkgreen';
+        context.strokeStyle = 'black';
         context.strokeRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
     }
 
-    var pizza = function(x, y) {
-        context.fillStyle = 'yellow';
-        context.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+    var goal = function (x, y) {
         context.fillStyle = 'red';
-        context.fillRect(x * snakeSize + 1, y * snakeSize + 1, snakeSize - 2, snakeSize - 2);
+        context.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+        // context.fillStyle = 'red';
+        // context.fillRect(x * snakeSize + 1, y * snakeSize + 1, snakeSize - 2, snakeSize - 2);
     }
 
-    var scoreText = function() {
-        var score_text = "Score: " + score;
-        context.fillStyle = 'blue';
-        context.fillText(score_text, 145, h - 5);
-    }
-
-    var drawSnake = function() {
+    var drawSnake = function () {
         var length = 4;
         snake = [];
         for (var i = length - 1; i >= 0; i--) {
-            snake.push({ x: i, y: 0 });
+            snake.push({
+                x: i,
+                y: 0
+            });
         }
     }
 
-    var paint = function() {
+    var paint = function () {
         context.fillStyle = 'lightgrey';
         context.fillRect(0, 0, w, h);
         context.strokeStyle = 'black';
@@ -49,7 +46,7 @@ var drawModule = (function() {
             snakeY++;
         }
 
-        if (snakeX == -1 || snakeX == w / snakeSize || snakeY == -1 || snakeY == h / snakeSize || checkCollision(snakeX, snakeY, snake)) {
+        if (snakeX == -1 || snakeX == w / snakeSize || snakeY == -1 || snakeY == h / snakeSize || checkCol(snakeX, snakeY, snake)) {
             //restart game
             btn.removeAttribute('disabled', true);
 
@@ -59,10 +56,13 @@ var drawModule = (function() {
         }
 
         if (snakeX == food.x && snakeY == food.y) {
-            var tail = { x: snakeX, y: snakeY };
+            var tail = {
+                x: snakeX,
+                y: snakeY
+            };
             score++;
 
-            createFood();
+            createGoal();
         } else {
             var tail = snake.pop();
             tail.x = snakeX;
@@ -75,11 +75,11 @@ var drawModule = (function() {
             bodySnake(snake[i].x, snake[i].y);
         }
 
-        pizza(food.x, food.y);
+        goal(food.x, food.y);
         scoreText();
     }
 
-    var createFood = function() {
+    var createGoal = function () {
         food = {
             x: Math.floor((Math.random() * 30) + 1),
             y: Math.floor((Math.random() * 30) + 1)
@@ -96,7 +96,7 @@ var drawModule = (function() {
         }
     }
 
-    var checkCollision = function(x, y, array) {
+    var checkCol = function (x, y, array) {
         for (var i = 0; i < array.length; i++) {
             if (array[i].x === x && array[i].y === y)
                 return true;
@@ -104,10 +104,17 @@ var drawModule = (function() {
         return false;
     }
 
-    var init = function() {
+    var scoreText = function () {
+        var score_text = "Score: " + score;
+        context.fillStyle = 'blue';
+        context.fillText(score_text, 145, h - 5);
+    }
+
+    var init = function () {
         direction = 'down';
         drawSnake();
-        createFood();
+        score = 0;
+        createGoal();
         gameloop = setInterval(paint, 80);
     }
 

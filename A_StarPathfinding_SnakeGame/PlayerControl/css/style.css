@@ -1,6 +1,6 @@
 #home {
-    width: 350px;
-    height: 350px;
+    width: 650px;
+    height: 500px;
     background-repeat: no-repeat;
     background-color: grey;
     background-position: center center;
@@ -39,3 +39,5 @@ p {
 .game {
     margin: 0 auto;
 }
+
+/*TODO add in switches for toggling obsticals, slider or input for ammount of obs., slider for player controled or A* */
