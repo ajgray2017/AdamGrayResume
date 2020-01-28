@@ -8,6 +8,7 @@ var drawModule = (function () {
     }
 
     var drawSnake = function () {
+        //todo randomize starting position
         var length = 4;
         snake = [];
         for (var i = length - 1; i >= 0; i--) {
@@ -18,16 +19,20 @@ var drawModule = (function () {
         }
     }
 
-    var drawObs = function (x, y) {
-        context.fillStyle = 'black';
-        context.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
+    var drawObs = function (obs) {
+        for (var i = 0; i < obs.length; i++) {
+            context.fillStyle = 'black';
+            context.fillRect(obs[i][0] * snakeSize, obs[i][1] * snakeSize, snakeSize, snakeSize);
+
+        }
     }
 
     var createObs = function () {
-        //todo add boolean for switch, add i < ammount for ability to change difficulty 
-        for(var i = 0; i < 100; i++){
-            drawObs(Math.floor((Math.random() * 60) + 1), Math.floor((Math.random() * 60) + 1))
+        //todo add boolean for switch, add i < ammount for ability to change difficulty, add catch so obs not created on top of snake
+        for (var i = 0; i < 100; i++) {
+            obs.push([Math.floor((Math.random() * (w / 10)) + 1), Math.floor((Math.random() * (h / 10)) + 1)])
         }
+        console.log(obs);
     }
 
     var drawgoal = function (x, y) {
@@ -37,17 +42,16 @@ var drawModule = (function () {
 
     var createGoal = function () {
         food = {
-            x: Math.floor((Math.random() * 30) + 1),
-            y: Math.floor((Math.random() * 30) + 1)
+            x: Math.floor((Math.random() * (w / 10)) + 1),
+            y: Math.floor((Math.random() * (h / 10)) + 1)
         }
 
         for (var i = 0; i > snake.length; i++) {
-            var snakeX = snake[i].x;
-            var snakeY = snake[i].y;
-
-            if (food.x === snakeX && food.y === snakeY || food.y === snakeY && food.x === snakeX) {
-                food.x = Math.floor((Math.random() * 30) + 1);
-                food.y = Math.floor((Math.random() * 30) + 1);
+            if (food.x === snake[i].x && food.y === snake[i].y) {
+                if (obs.includes([food.x, food.y])) {
+                    food.x = Math.floor((Math.random() * (w / 10)) + 1);
+                    food.y = Math.floor((Math.random() * (h / 10)) + 1);
+                }
             }
         }
     }
@@ -104,6 +108,7 @@ var drawModule = (function () {
 
         drawgoal(food.x, food.y);
         scoreText();
+        drawObs(obs);
     }
 
     var checkCol = function (x, y, array) {
