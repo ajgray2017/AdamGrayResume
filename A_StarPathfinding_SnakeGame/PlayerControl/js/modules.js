@@ -9,7 +9,7 @@ var drawModule = (function () {
 
     var drawSnake = function () {
         //todo randomize starting position
-        var length = 4;
+        var length = 1;
         snake = [];
         for (var i = length - 1; i >= 0; i--) {
             snake.push({
