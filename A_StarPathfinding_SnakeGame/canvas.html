@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: grey
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class="game">
+            <div id="home">
+                <canvas id="canvas" width="650" height="500">
+                </canvas>
+                <button id="btn">START</button>
+            </div>
+        </div>
+        <div>
+            <label id= "pcSwitch" class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div>
+            <label id = "obSwitch" class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="50" max="250" value="50" class="slider" id="obRange">
+            <p>Amount of obstacles = <span id="demo"></span></p>
+        </div>
+
+    </section>
+
+
+
+    <script src="js/settings.js"></script>
+    <script src="js/modules.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
