@@ -47,8 +47,8 @@ var drawModule = (function () {
         }
 
         for (var i = 0; i > snake.length; i++) {
-            if (food.x === snake[i].x && food.y === snake[i].y) {
-                while (obs.includes([food.x, food.y])) {
+            if (food.x == snake[i].x && food.y == snake[i].y) {
+                while (obs.includes(food.x) && obs.includes(food.y)) {
                     food.x = Math.floor((Math.random() * (w / 10)) + 1);
                     food.y = Math.floor((Math.random() * (h / 10)) + 1);
                 }

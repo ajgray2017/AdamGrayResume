@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var slider = document.getElementById("obRange");
-var output = document.getElementById("demo");
+var output = document.getElementById("obAmount");
 output.innerHTML = slider.value; // Display the default slider value
 var snakeSize = 10;
 var w = 650;

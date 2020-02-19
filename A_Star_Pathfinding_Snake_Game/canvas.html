@@ -20,21 +20,19 @@
                 <button id="btn">START</button>
             </div>
         </div>
-        <div>
-            <label id= "pcSwitch" class="switch">
+        <div id=switches>
+            <label id="pcSwitch" class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <label id="obSwitch" class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
             </label>
         </div>
-        <div>
-            <label id = "obSwitch" class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-        </div>
-        <div class="slidecontainer">
+        <div id=slider class="slidecontainer">
             <input type="range" min="50" max="250" value="50" class="slider" id="obRange">
-            <p>Amount of obstacles = <span id="demo"></span></p>
+            <p>Amount of obstacles = <span id="obAmount"></span></p>
         </div>
 
     </section>
