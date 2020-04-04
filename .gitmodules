@@ -1,0 +1,6 @@
+[submodule "CSC455_FinalProject"]
+	path = CSC455_FinalProject
+	url = https://github.com/ajgray2017/CSC455_FinalProject.git
+[submodule "CSC475_Projects"]
+	path = CSC475_Projects
+	url = https://github.com/ajgray2017/CSC475_Projects.git
