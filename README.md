@@ -1,7 +1,18 @@
 # Adam Gray's Resume Projects
 # UNDER CONSTRUCTION!
 
-Including projects from my BS in computer science from UNCW, along with projects I have worked on outside of school in order to show proficiency in other areas of computer science.
+Including projects from my BS in computer science from UNCW, along with projects I have worked on outside of school in order to show proficiency in other areas of computer science. I am confident in my development skills, and my ability to pick a new language very rapidly. 
+
+# Experience (3+ Years of Programming)
+> - Python
+> - Java
+> - Database Languages (SQL, SQLite)
+> - Cloud Computing 
+> - UNIX/LINUX
+> - Java Script 
+> - CSS
+> - HTML 
+
 
 # (Un)Intuitive Calculator 
 [Python]
