@@ -3,6 +3,16 @@
 
 Including projects from my BS in computer science from UNCW, along with projects I have worked on outside of school in order to show proficiency in other areas of computer science.
 
+#Experience
+> - Python
+> - Java
+> - Database Languages (SQL, SQLite)
+> - Cloud Computing 
+> - Java Script 
+> - CSS
+> - HTML 
+
+
 # (Un)Intuitive Calculator 
 [Python]
 > A caluclator, currently allowing functionality up to 500. 
