@@ -1,7 +1,7 @@
 # Adam Gray's Resume Projects
 # UNDER CONSTRUCTION!
 
-Including projects from my BS in computer science from UNCW, along with projects I have worked on outside of school in order to show proficiency in other areas of computer science. I am confident in my development skills, and my ability to pick a new language very rapidly. 
+Including projects from my BS in computer science from UNCW, along with projects I have worked on outside of school in order to show proficiency in other areas of computer science. I am confident in my development skills, and my ability to pick a new language very rapidly. I am very interested in back-end development, I love all the problem solving that comes along with it. However, I am able to work in a front-end enviroment as it is a critical part of the development life cycle. 
 
 # Experience (3+ Years of Programming)
 > - Python
