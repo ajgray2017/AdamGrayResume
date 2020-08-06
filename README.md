@@ -37,3 +37,7 @@ Including projects from my BS in computer science from UNCW, along with projects
 # CSC 455 Final Project 
 [Java, SQL]
 > While at the University North Carolina Wilmington, I attended the Database Management course CSC 455, we were tasked with creating and implementing a database from scratch. Alex, my partner, having experience in the foodservice industry, came up with the idea to make a restaurant POS system. This database is set up for the use of cooks and servers, to create, complete, and return a customer's order, while holding a mutable count of the current on-hand stock of ingredients and past/present orders.
+
+# CSC 475 Final Project
+[Python]
+> While at the University North Carolina Wilmington, I attended the Topics in Computer Science and Technology: Computer Security course. We focusing on computer security across the board, and these were some of my favorite projects from the course. I wrote the botnet to have the smallest possible slaves, and allow for the command & control server to send any modular payload wanted through a pickled object. 
