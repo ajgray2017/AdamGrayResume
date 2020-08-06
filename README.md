@@ -16,7 +16,7 @@ Including projects from my BS in computer science from UNCW, along with projects
 
 # (Un)Intuitive Calculator 
 [Python]
-> A caluclator, currently allowing functionality up to 500. 
+> A calculator, currently allowing functionality up to 500. 
 > With operations including:
 > - addition
 > - subtraction
