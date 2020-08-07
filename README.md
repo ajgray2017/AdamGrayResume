@@ -24,7 +24,7 @@ Including projects from my BS in computer science from UNCW, along with projects
 > - division
 > - modulos
 >
-> Made to as a joke, there are over 2.5 million lines of if statements for every possible subset of x operation y = z. There would be more, but this is the largest I could go and still allow the base git functionality. 
+> Made to as a joke, there are over 2.5 million lines of if statements for every possible subset of x operation y = z. There would be more, (I got it up to over 100 million lines) but this is the largest I could go and still allow the base git functionality. 
 
 # A* Pathfinding Snake Game (In Progress) 
 [JS, CSS, HTML]
