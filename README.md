@@ -41,3 +41,7 @@ Including projects from my BS in computer science from UNCW, along with projects
 # CSC 455 Final Project 
 [Java, SQL]
 > While at the University North Carolina Wilmington, I attended the Database Management course CSC 455, we were tasked with creating and implementing a database from scratch. Alex, my partner, having experience in the foodservice industry, came up with the idea to make a restaurant POS system. This database is set up for the use of cooks and servers, to create, complete, and return a customer's order, while holding a mutable count of the current on-hand stock of ingredients and past/present orders.
+
+# CustomIRC (In Progress)
+[C++]
+> To improve my skills with C/C++, I developed a multithreaded client/server messaging service. X number of clients can connect to the server, and each clients message gets sent to the server, and broadcasted out to each of the other clients. 
