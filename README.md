@@ -6,6 +6,7 @@ Including projects from my BS in computer science from UNCW, along with projects
 # Experience (3+ Years of Programming)
 > - Python
 > - Java
+> - C/C++
 > - Database Languages (SQL, SQLite)
 > - Cloud Computing 
 > - UNIX/LINUX
