@@ -45,4 +45,4 @@ Including projects from my BS in computer science from UNCW, along with projects
 
 # CustomIRC (In Progress)
 [C++]
-> To improve my skills with C/C++, I developed a multithreaded client/server messaging service. X number of clients can connect to the server, and each clients message gets sent to the server, and broadcasted out to each of the other clients. 
+> To improve my skills with C/C++, I developed a multithreaded client/server messaging service. X number of clients can connect to the server, each clients message that is sent to the server gets broadcasted out to each of the other clients. 
